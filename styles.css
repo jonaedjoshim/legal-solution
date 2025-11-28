@@ -1,0 +1,13 @@
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.dark3 {
+    color: rgba(112, 112, 112, 1);
+}

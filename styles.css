@@ -11,6 +11,9 @@
 .dark3 {
     color: rgba(112, 112, 112, 1);
 }
+.dark6 {
+    color: rgba(231, 231, 231, 1);
+}
 
 /* primary button */
 
@@ -22,4 +25,13 @@
     font-weight: 600;
     border-style: none;
     padding: 18px 30px;
+}
+
+/* banner background image */
+
+.banner {
+    background-image:  linear-gradient(to top, rgba(17, 17, 17, 1),rgba(17, 17, 17, 0)), url('images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

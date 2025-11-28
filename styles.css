@@ -11,3 +11,15 @@
 .dark3 {
     color: rgba(112, 112, 112, 1);
 }
+
+/* primary button */
+
+.button {
+    background-color: rgba(182, 140, 90, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-style: none;
+    padding: 18px 30px;
+}

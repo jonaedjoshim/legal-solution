@@ -4,9 +4,10 @@
 }
 
 .poppins {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
+
 .banner {
     background-image: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0)), url(images/banner.png);
     background-repeat: no-repeat;
@@ -16,4 +17,8 @@
 
 .dark6 {
     color: rgba(231, 231, 231, 1);
+}
+
+.hover:hover {
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(245, 245, 245), rgb(255, 255, 255));
 }

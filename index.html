@@ -526,7 +526,7 @@
         <section class="mt-6 lg:mt-12 banner border rounded-lg">
             <div class="m-14 lg:my-24 mx-4 lg:mx-60">
                 <div class="flex flex-col items-center text-center mb-8">
-                    <h2 class="eb-garamond font-extrabold text-4xl lg:text-7xl text-white mb-6">We Provide Effective
+                    <h2 id="legal" class="eb-garamond font-extrabold text-4xl lg:text-7xl mb-6">We Provide Effective
                         Legal Solutions
                     </h2>
                     <p class="dark6 text-base font-normal">There are many variations of passages of Lorem Ipsum
@@ -658,7 +658,7 @@
             </div>
         </section>
         <!-- client section -->
-        <section class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12">
+        <section class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12 flex flex-col items-center">
             <div class="flex-col text-center mt-6 lg:mt-12">
                 <h3 class="eb-garamond text-4xl font-extrabold dark2 mb-6">What Our Client Say</h3>
                 <p class="dark3 text-base font-normal mb-4 lg:mb-14">There are many variations of passages of Lorem
@@ -731,7 +731,7 @@
             </div>
         </section>
         <!-- FAQ section -->
-        <section class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12">
+        <section class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12 flex flex-col items-center">
             <div class="flex-col text-center mt-6 lg:mt-12">
                 <h3 class="eb-garamond text-4xl font-extrabold dark2 mb-6">Frequently Asked Any Questions</h3>
                 <p class="dark3 text-base font-normal mb-4 lg:mb-14">There are many variations of passages of Lorem
@@ -739,7 +739,7 @@
                     available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
             </div>
             <!-- accordion section -->
-            <div class="flex flex-col lg:flex-row gap-6 justify-between items-center">
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 justify-between items-center">
                 <!-- accordion/collapse start -->
                 <div class="flex flex-col gap-6 lg:max-w-[570px] lg:gap-8">
                     <div>
@@ -800,6 +800,99 @@
                 </div>
                 <div class="">
                     <img src="images/faq.png" class="w-full h-full object-contain rounded-lg" />
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12 flex flex-col items-center">
+            <div class="flex-col text-center mt-6 lg:mt-12">
+                <h3 class="eb-garamond text-4xl font-extrabold dark2 mb-6">Contact With Us</h3>
+                <p class="dark3 text-base font-normal mb-4 lg:mb-14">There are many variations of passages of Lorem
+                    Ipsum
+                    available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between">
+                <div class="py-12 px-4">
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-300 max-w-4xl mx-auto rounded-lg overflow-hidden">
+                        <div
+                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                            <div class="mb-4">
+                                <img src="images/location.png" alt="">
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Address</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                A108 Adam Street,<br>
+                                New York, NY 535022
+                            </p>
+                        </div>
+                        <div
+                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                            <div class="mb-4">
+                                <img src="images/call.png" alt="">
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Call Us</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                +88 01750 00 00 00<br>
+                                +88 01750 00 00 00
+                            </p>
+                        </div>
+                        <div
+                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                            <div class="mb-4">
+                                <img src="images/email.png" alt="">
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Email Us</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                info@gmail.com<br>
+                                info@gmail.com
+                            </p>
+                        </div>
+                        <div
+                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                            <div class="mb-4">
+                                <img src="images/time.png" alt="">
+                            </div>
+                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Working Hours</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Mon-Fri: 9AM to 5PM<br>
+                                Sunday: 9AM to 1 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="max-w-xl mx-auto p-4 md:p-8">
+                        <form class="space-y-4 md:space-y-5 bg-white p-2 rounded-xl">
+
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
+                   placeholder-gray-500 text-gray-700 
+                   focus:outline-none focus:ring-1 focus:ring-amber-600 
+                   transition duration-200 shadow-sm" />
+
+                            <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
+                   placeholder-gray-500 text-gray-700 
+                   focus:outline-none focus:ring-1 focus:ring-amber-600 
+                   transition duration-200 shadow-sm" />
+
+                            <input type="text" placeholder="Subject" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
+                   placeholder-gray-500 text-gray-700 
+                   focus:outline-none focus:ring-1 focus:ring-amber-600 
+                   transition duration-200 shadow-sm" />
+
+                            <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
+                   placeholder-gray-500 text-gray-700 
+                   focus:outline-none focus:ring-1 focus:ring-amber-600 
+                   transition duration-200 resize-none shadow-sm"></textarea>
+
+                            <button type="submit" class="w-full py-4 text-lg font-semibold text-white 
+                   bg-[#B68C5A] rounded-lg 
+                   hover:bg-[#8F764C] transition duration-300 ease-in-out shadow-lg">
+                                Send Message
+                            </button>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

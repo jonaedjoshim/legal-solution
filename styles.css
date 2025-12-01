@@ -1,3 +1,6 @@
+#legal{
+    color: white;
+}
 .eb-garamond {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
@@ -50,4 +53,8 @@ h5,
 h6 {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
+    color: #414040;
+}
+p{
+    color: #707070;
 }

@@ -278,7 +278,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost"><img src="images/logo2.png" alt="company logo"></a>
+                    <a class="btn btn-ghost invisible lg:visible"><img src="images/logo2.png" alt="company logo"></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -517,7 +517,7 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn lg:text-base bg-[#B68C5A] text-white py-2 px-5 border-none shadow-none">Free
+                    <a class="btn lg:text-base bg-[#B68C5A] text-white py-2 px-3 lg:px-5 border-none shadow-none">Free
                         Consultation</a>
                 </div>
             </div>
@@ -811,95 +811,115 @@
                     Ipsum
                     available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex flex-col lg:flex-row justify-between">
-                <div class="py-12 px-4">
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-300 max-w-4xl mx-auto rounded-lg overflow-hidden">
+            <section class="py-12 px-4">
+                <div class="flex flex-col lg:flex-row max-w-6xl mx-auto lg:space-x-8 items-stretch">
+                    <div class="lg:w-1/2 mb-8 lg:mb-0">
                         <div
-                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                            <div class="mb-4">
-                                <img src="images/location.png" alt="">
+                            class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-300 h-full rounded-lg overflow-hidden">
+                            <div
+                                class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                                <div class="mb-4"><img src="images/location.png" alt="Location Icon"></div>
+                                <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Address</h3>
+                                <p class="text-gray-600 leading-relaxed">A108 Adam Street,<br>New York, NY 535022</p>
                             </div>
-                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Address</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                A108 Adam Street,<br>
-                                New York, NY 535022
-                            </p>
+                            <div
+                                class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                                <div class="mb-4"><img src="images/call.png" alt="Call Icon"></div>
+                                <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Call Us</h3>
+                                <p class="text-gray-600 leading-relaxed">+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+                            </div>
+                            <div
+                                class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                                <div class="mb-4"><img src="images/email.png" alt="Email Icon"></div>
+                                <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Email Us</h3>
+                                <p class="text-gray-600 leading-relaxed">info@gmail.com<br>info@gmail.com</p>
+                            </div>
+                            <div
+                                class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
+                                <div class="mb-4"><img src="images/time.png" alt="Time Icon"></div>
+                                <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Working Hours</h3>
+                                <p class="text-gray-600 leading-relaxed">Mon-Fri: 9AM to 5PM<br>Sunday: 9AM to 1 PM</p>
+                            </div>
                         </div>
-                        <div
-                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                            <div class="mb-4">
-                                <img src="images/call.png" alt="">
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Call Us</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                +88 01750 00 00 00<br>
-                                +88 01750 00 00 00
-                            </p>
-                        </div>
-                        <div
-                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                            <div class="mb-4">
-                                <img src="images/email.png" alt="">
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Email Us</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                info@gmail.com<br>
-                                info@gmail.com
-                            </p>
-                        </div>
-                        <div
-                            class="bg-[#F3F3F3] p-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                            <div class="mb-4">
-                                <img src="images/time.png" alt="">
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2 tracking-wide text-gray-800">Working Hours</h3>
-                            <p class="text-gray-600 leading-relaxed">
-                                Mon-Fri: 9AM to 5PM<br>
-                                Sunday: 9AM to 1 PM
-                            </p>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <div class=" bg-white rounded-xl h-full">
+                            <form class="space-y-4 md:space-y-5">
+
+                                <input type="text" placeholder="Your Name"
+                                    class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg placeholder-gray-500 text-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-600 transition duration-200 shadow-sm" />
+                                <input type="email" placeholder="Your Email"
+                                    class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg placeholder-gray-500 text-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-600 transition duration-200 shadow-sm" />
+                                <input type="text" placeholder="Subject"
+                                    class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg placeholder-gray-500 text-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-600 transition duration-200 shadow-sm" />
+
+                                <textarea placeholder="Your Message" rows="5"
+                                    class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg placeholder-gray-500 text-gray-700 focus:outline-none focus:ring-1 focus:ring-amber-600 transition duration-200 resize-none shadow-sm"></textarea>
+
+                                <button type="submit"
+                                    class="w-full py-4 text-lg font-semibold text-white bg-[#B68C5A] rounded-lg hover:bg-[#8F764C] transition duration-300 ease-in-out shadow-lg">
+                                    Send Message
+                                </button>
+
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="max-w-xl mx-auto p-4 md:p-8">
-                        <form class="space-y-4 md:space-y-5 bg-white p-2 rounded-xl">
-
-                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
-                   placeholder-gray-500 text-gray-700 
-                   focus:outline-none focus:ring-1 focus:ring-amber-600 
-                   transition duration-200 shadow-sm" />
-
-                            <input type="email" placeholder="Your Email" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
-                   placeholder-gray-500 text-gray-700 
-                   focus:outline-none focus:ring-1 focus:ring-amber-600 
-                   transition duration-200 shadow-sm" />
-
-                            <input type="text" placeholder="Subject" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
-                   placeholder-gray-500 text-gray-700 
-                   focus:outline-none focus:ring-1 focus:ring-amber-600 
-                   transition duration-200 shadow-sm" />
-
-                            <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-gray-50 border border-gray-100 rounded-lg 
-                   placeholder-gray-500 text-gray-700 
-                   focus:outline-none focus:ring-1 focus:ring-amber-600 
-                   transition duration-200 resize-none shadow-sm"></textarea>
-
-                            <button type="submit" class="w-full py-4 text-lg font-semibold text-white 
-                   bg-[#B68C5A] rounded-lg 
-                   hover:bg-[#8F764C] transition duration-300 ease-in-out shadow-lg">
-                                Send Message
-                            </button>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
     </main>
     <!-- footer section -->
-    <footer>
+    <footer class="bg-black text-white py-16 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
+            <div class="space-y-4">
+                <div class="text-3xl font-bold flex items-center">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <p class="text-base leading-relaxed">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold mb-5">Usefull Link</h3>
+                <ul class="space-y-3 text-[#CFCFCF]">
+                    <li><a href="" class="hover:text-[#B68C5A] transition duration-200">Homes</a></li>
+                    <li><a href="" class="hover:text-[#B68C5A] transition duration-200">About Us</a></li>
+                    <li><a href="" class="hover:text-[#B68C5A] transition duration-200">Cases</a></li>
+                    <li><a href="" class="hover:text-[#B68C5A] transition duration-200">Blog</a></li>
+                    <li><a href="" class="hover:text-[#B68C5A] transition duration-200">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold mb-5">Contact Now</h3>
+                <div class="space-y-3 text-gray-400">
+                    <p>555 4th St NW, Washington<br>DC 20530, United States</p>
+                    <p>
+                        +88 01750 000 000<br>
+                        +88 01750 000 000
+                    </p>
+                    <p>
+                        info@gmail.com<br>
+                        info@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-extrabold mb-5">Subscribe</h3>
+                <p class="mb-4">
+                    Subscribe for our latest & Articles. We Won't Give You Spam Mails
+                </p>
+                <div class="flex mt-4 w-full h-12">
+                    <input type="email" placeholder="Email Address"
+                        class="flex-grow p-3 text-sm rounded-l-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#B68C5A]">
 
+                    <button class="bg-[#B68C5A] w-12 rounded-r-lg text-white flex items-center justify-center 
+                           hover:bg-[#A3865D] transition duration-200 shadow-md">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

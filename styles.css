@@ -58,3 +58,16 @@ h6 {
 p{
     color: #707070;
 }
+
+footer p {
+    color: #CFCFCF;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6{
+    color: white;
+}

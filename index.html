@@ -24,12 +24,12 @@
     <title>Legal Solution</title>
 </head>
 
-<body class="eb-garamond">
+<body class="poppin">
     <!-- header section -->
-    <header class="w-11/12 nlg:w-8/12 mx-auto my-4 lg:my-12">
+    <header class="w-11/12 lg:w-8/12 mx-auto my-4 lg:my-12">
         <!-- nav section -->
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 flex justify-between items-center">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -278,14 +278,14 @@
                             </li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost"><img src="images/logo2.png" alt="company logo"></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                        <li><a class="text-xl">Home</a></li>
                         <li>
                             <details>
-                                <summary>Services</summary>
+                                <summary class="text-xl">Services</summary>
                                 <ul class="p-2 bg-base-100 w-40 z-1">
                                     <li>
                                         <details>
@@ -352,7 +352,7 @@
                         </li>
                         <li>
                             <details>
-                                <summary>Cases</summary>
+                                <summary class="text-xl">Cases</summary>
                                 <ul class="p-2 bg-base-100 w-40 z-1">
                                     <li>
                                         <details>
@@ -422,7 +422,7 @@
                         </li>
                         <li>
                             <details>
-                                <summary>Blog</summary>
+                                <summary class="text-xl">Blog</summary>
                                 <ul class="p-2 bg-base-100 w-40 z-1">
                                     <li><a>What is Family Law? A Complete Guide to Legal Matters Within Families</a>
                                     </li>
@@ -437,7 +437,7 @@
                         </li>
                         <li>
                             <details>
-                                <summary>Contact Us</summary>
+                                <summary class="text-xl">Contact Us</summary>
                                 <ul class="p-2 bg-base-100 w-40 z-1">
                                     <li>
                                         <details>
@@ -517,10 +517,33 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="btn lg:text-base bg-[#B68C5A] text-white py-2 px-5 border-none shadow-none">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
+        <!-- banner section -->
+        <section class="mt-6 lg:mt-12 banner border rounded-lg">
+            <div class="m-14 lg:my-24 mx-4 lg:mx-60">
+                <div class="flex flex-col items-center text-center mb-8">
+                    <h2 class="eb-garamond font-extrabold text-4xl lg:text-7xl text-white mb-6">We Provide Effective
+                        Legal Solutions
+                    </h2>
+                    <p class="dark6 text-base font-normal">There are many variations of passages of Lorem Ipsum
+                        available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <search class="flex items-center justify-center gap-6 dark6">
+                    <form action="/search" method="get" class="flex items-center justify-center gap-6">
+                        <!-- label er bepar ta khota laglo -->
+                        <label for="search-input" class="sr-only">Search:</label>
+                        <input type="search" id="search-input" name="query" placeholder="Search your services"
+                            class="rounded-lg p-5 w-full h-0  lg:h-12">
+                        <button type="submit"
+                            class="btn lg:text-lg lg:w-32 lg:h-12  bg-[#B68C5A] text-white py-2 px-5 border-none shadow-none">Search</button>
+                    </form>
+                </search>
+            </div>
+        </section>
     </header>
     <!-- main section -->
     <main>

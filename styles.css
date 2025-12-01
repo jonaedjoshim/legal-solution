@@ -2,3 +2,18 @@
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;
 }
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.banner {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0)), url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dark6 {
+    color: rgba(231, 231, 231, 1);
+}

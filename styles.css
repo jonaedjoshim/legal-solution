@@ -15,10 +15,39 @@
     background-position: center;
 }
 
+.carousel1 {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0)), url(images/slider-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carousel2 {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0)), url(images/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.carousel3 {
+    background-image: linear-gradient(to top, rgba(17, 17, 17, 1), rgba(17, 17, 17, 0)), url(images/slider-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .dark6 {
     color: rgba(231, 231, 231, 1);
 }
 
 .hover:hover {
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(245, 245, 245), rgb(255, 255, 255));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
 }

@@ -11,6 +11,7 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome cdn -->
@@ -25,10 +26,500 @@
 
 <body class="eb-garamond">
     <!-- header section -->
-    <header>
+    <header class="w-11/12 nlg:w-8/12 mx-auto my-4 lg:my-12">
         <!-- nav section -->
         <nav>
-
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li>
+                                <details>
+                                    <summary>Services</summary>
+                                    <ul class="p-2 bg-base-100 w-40 z-1">
+                                        <li>
+                                            <details>
+                                                <summary>Business Law</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Company registration </a></li>
+                                                    <li><a> Contracts & Agreements</a></li>
+                                                    <li><a>Legal compliance & documentation </a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Criminal Law</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Bail assistance </a></li>
+                                                    <li><a> Criminal case defense</a></li>
+                                                    <li><a>FIR drafting </a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Child Support</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a> Child support legal advice</a></li>
+                                                    <li><a>Child support calculation and modification </a></li>
+                                                    <li><a> Assistance with court orders related to child support</a>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Education Law</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a> Student rights and school discipline cases</a></li>
+                                                    <li><a>Legal advice on tuition or academic fraud issues </a></li>
+                                                    <li><a>Teacher misconduct or administrative appeals</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Divorce Law</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Mutual and contested divorce assistance</a></li>
+                                                    <li><a>Property division guidance</a></li>
+                                                    <li><a>Domestic violence and protection orders</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>TAX Law</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Income tax filing and disputes</a></li>
+                                                    <li><a>Tax penalty or audit support</a></li>
+                                                    <li><a>Tax return corrections and appeals</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Cases</summary>
+                                    <ul class="p-2 bg-base-100 w-40 z-1">
+                                        <li>
+                                            <details>
+                                                <summary>Basic Information</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Case Title / Name</a></li>
+                                                    <li><a>Case Number / ID</a></li>
+                                                    <li><a>Case Type </a></li>
+                                                    <li><a>Court Name & Location</a></li>
+                                                    <li><a>Filing Date</a></li>
+                                                    <li><a>Client Name</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Parties Involved</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Plaintiff / Petitioner</a></li>
+                                                    <li><a>Defendant / Respondent</a></li>
+                                                    <li><a>Lawyers Name & Contact (optional)</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Case Status</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Current Status: (e.g., Pending, Hearing Scheduled, Closed,
+                                                            Dismissed)</a></li>
+                                                    <li><a>Next Hearing Date</a></li>
+                                                    <li><a>Previous Hearing Dates & Updates</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Documents Section</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>FIR copy (if any)</a></li>
+                                                    <li><a>Legal Notices</a></li>
+                                                    <li><a>Submitted Evidence</a></li>
+                                                    <li><a>Court Orders (PDFs or links)</a></li>
+                                                    <li><a>Affidavits, Petitions</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Assigned Lawyer Comments (if needed)</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Lawyer's brief note on current progress</a></li>
+                                                    <li><a>Suggestions for next steps</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Internal Notes (Admin use)</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>IFor tracking internal updates not visible to the client</a>
+                                                    </li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Blog</summary>
+                                    <ul class="p-2 bg-base-100 w-40 z-1">
+                                        <li><a>What is Family Law? A Complete Guide to Legal Matters Within Families</a>
+                                        </li>
+                                        <li><a>Understanding Criminal Law: What You Need to Know If You're Charged</a>
+                                        </li>
+                                        <li><a>How Child Support Works: Legal Responsibilities of Parents</a></li>
+                                        <li><a>Education Law Explained: Rights of Students and Responsibilities of
+                                                Schools</a></li>
+                                        <li><a>Divorce Law 101: Legal Steps, Rights, and What to Expect</a></li>
+                                        <li><a>Tax Law Basics for Individuals and Small Businesses</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Contact Us</summary>
+                                    <ul class="p-2 bg-base-100 w-40 z-1">
+                                        <li>
+                                            <details>
+                                                <summary>Customer Support</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Live Chat / Chat with Us</a></li>
+                                                    <li><a>Support Center / Help Desk</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Request a Consultation</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Free Consultation</a></li>
+                                                    <li><a>Schedule a Call</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Office Locations</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a> Find Our Office</a></li>
+                                                    <li><a>Google Maps Link</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Call Us</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Phone Numbers</a></li>
+                                                    <li><a>Request a Callback</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Email Us</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>General Inquiries </a></li>
+                                                    <li><a>Legal Support Email</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Submit a Query / Contact Form</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Fill Out Contact Form</a></li>
+                                                    <li><a>Report an Issue</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>FAQ</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>FCommon Questions</a></li>
+                                                    <li><a>Legal Help FAQs</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                        <li>
+                                            <details>
+                                                <summary>Feedback / Testimonials</summary>
+                                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                                    <li><a>Leave a Review </a></li>
+                                                    <li><a>Share Your Experience</a></li>
+                                                </ul>
+                                            </details>
+                                        </li>
+                                    </ul>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li>
+                            <details>
+                                <summary>Services</summary>
+                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                    <li>
+                                        <details>
+                                            <summary>Business Law</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Company registration </a></li>
+                                                <li><a> Contracts & Agreements</a></li>
+                                                <li><a>Legal compliance & documentation </a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Criminal Law</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Bail assistance </a></li>
+                                                <li><a> Criminal case defense</a></li>
+                                                <li><a>FIR drafting </a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Child Support</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a> Child support legal advice</a></li>
+                                                <li><a>Child support calculation and modification </a></li>
+                                                <li><a> Assistance with court orders related to child support</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Education Law</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a> Student rights and school discipline cases</a></li>
+                                                <li><a>Legal advice on tuition or academic fraud issues </a></li>
+                                                <li><a>Teacher misconduct or administrative appeals</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Divorce Law</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Mutual and contested divorce assistance</a></li>
+                                                <li><a>Property division guidance</a></li>
+                                                <li><a>Domestic violence and protection orders</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>TAX Law</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Income tax filing and disputes</a></li>
+                                                <li><a>Tax penalty or audit support</a></li>
+                                                <li><a>Tax return corrections and appeals</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Cases</summary>
+                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                    <li>
+                                        <details>
+                                            <summary>Basic Information</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Case Title / Name</a></li>
+                                                <li><a>Case Number / ID</a></li>
+                                                <li><a>Case Type </a></li>
+                                                <li><a>Court Name & Location</a></li>
+                                                <li><a>Filing Date</a></li>
+                                                <li><a>Client Name</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Parties Involved</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Plaintiff / Petitioner</a></li>
+                                                <li><a>Defendant / Respondent</a></li>
+                                                <li><a>Lawyers Name & Contact (optional)</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Case Status</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Current Status: (e.g., Pending, Hearing Scheduled, Closed,
+                                                        Dismissed)</a></li>
+                                                <li><a>Next Hearing Date</a></li>
+                                                <li><a>Previous Hearing Dates & Updates</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Documents Section</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>FIR copy (if any)</a></li>
+                                                <li><a>Legal Notices</a></li>
+                                                <li><a>Submitted Evidence</a></li>
+                                                <li><a>Court Orders (PDFs or links)</a></li>
+                                                <li><a>Affidavits, Petitions</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Assigned Lawyer Comments (if needed)</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Lawyer's brief note on current progress</a></li>
+                                                <li><a>Suggestions for next steps</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Internal Notes (Admin use)</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>IFor tracking internal updates not visible to the client</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Blog</summary>
+                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                    <li><a>What is Family Law? A Complete Guide to Legal Matters Within Families</a>
+                                    </li>
+                                    <li><a>Understanding Criminal Law: What You Need to Know If You're Charged</a></li>
+                                    <li><a>How Child Support Works: Legal Responsibilities of Parents</a></li>
+                                    <li><a>Education Law Explained: Rights of Students and Responsibilities of
+                                            Schools</a></li>
+                                    <li><a>Divorce Law 101: Legal Steps, Rights, and What to Expect</a></li>
+                                    <li><a>Tax Law Basics for Individuals and Small Businesses</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Contact Us</summary>
+                                <ul class="p-2 bg-base-100 w-40 z-1">
+                                    <li>
+                                        <details>
+                                            <summary>Customer Support</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Live Chat / Chat with Us</a></li>
+                                                <li><a>Support Center / Help Desk</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Request a Consultation</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Free Consultation</a></li>
+                                                <li><a>Schedule a Call</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Office Locations</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a> Find Our Office</a></li>
+                                                <li><a>Google Maps Link</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Call Us</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Phone Numbers</a></li>
+                                                <li><a>Request a Callback</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Email Us</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>General Inquiries </a></li>
+                                                <li><a>Legal Support Email</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Submit a Query / Contact Form</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Fill Out Contact Form</a></li>
+                                                <li><a>Report an Issue</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>FAQ</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>FCommon Questions</a></li>
+                                                <li><a>Legal Help FAQs</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Feedback / Testimonials</summary>
+                                            <ul class="p-2 bg-base-100 w-40 z-1">
+                                                <li><a>Leave a Review </a></li>
+                                                <li><a>Share Your Experience</a></li>
+                                            </ul>
+                                        </details>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- main section -->
